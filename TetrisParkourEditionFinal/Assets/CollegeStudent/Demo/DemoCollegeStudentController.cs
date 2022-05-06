@@ -8,7 +8,7 @@ namespace ClearSky
     {
         public float movePower = 10f;
         public float KickBoardMovePower = 15f;
-        public float jumpPower = 20f; //Set Gravity Scale in Rigidbody2D Component to 5
+        public float jumpPower = 25f; //Set Gravity Scale in Rigidbody2D Component to 5
 
         private Rigidbody2D rb;
         private Animator anim;
