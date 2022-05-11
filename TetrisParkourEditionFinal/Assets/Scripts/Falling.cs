@@ -18,6 +18,19 @@ public class Falling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            transform.position += new Vector3(-1, 0, 0);
+            if (!ValidMove())
+                transform.position -= new Vector3(-1, 0, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.H))
+        {
+            transform.position += new Vector3(1, 0, 0);
+            if (!ValidMove())
+                transform.position -= new Vector3(-1, 0, 0);
+        }
+
         if(Time.time - previousTime > fallTime)
         {
             transform.position += new Vector3(0, -1, 0);
