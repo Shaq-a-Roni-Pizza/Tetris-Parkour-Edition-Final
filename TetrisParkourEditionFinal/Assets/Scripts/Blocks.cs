@@ -58,5 +58,15 @@ public class Blocks : MonoBehaviour
         }
 
         return true;
+
+        void OnCollisionEnter(Collision2D col)
+        {
+            if (col.gameObject.name == "ground")
+            {
+                Debug.Log("Collision Dectected");
+            }
+
+      
+        }
     }
 }

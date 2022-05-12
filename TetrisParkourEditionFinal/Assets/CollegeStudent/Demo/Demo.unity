@@ -501,6 +501,7 @@ MonoBehaviour:
   - {fileID: 439997220702805730, guid: c51a5450ad6e47645a8d4680f93a36ca, type: 3}
   - {fileID: 8608194158884098540, guid: 93f7db0057680054eadde111f3138188, type: 3}
   - {fileID: 7517983314883094046, guid: 4c36fbaa6828e974a8c33d09e10db467, type: 3}
+  spawnRate: 2
 --- !u!4 &1355864913
 Transform:
   m_ObjectHideFlags: 0
