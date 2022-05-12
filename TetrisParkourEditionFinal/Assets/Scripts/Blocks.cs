@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Falling : MonoBehaviour
+public class Blocks : MonoBehaviour
 {
     private float previousTime;
     public float fallTime = 0.8f;
@@ -31,7 +31,7 @@ public class Falling : MonoBehaviour
                 transform.position -= new Vector3(-1, 0, 0);
         }
 
-        if(Time.time - previousTime > fallTime)
+        if(Time.time - previousTime > (Input.GetKey(KeyCode.G) ? fallTime / 10 : fallTime))
         {
             transform.position += new Vector3(0, -1, 0);
             if (!ValidMove())
