@@ -6,6 +6,7 @@ public class Blocks : MonoBehaviour
 {
     private float previousTime;
     public float fallTime = 0.8f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,14 @@ public class Blocks : MonoBehaviour
         {
             transform.position += new Vector3(0, -1, 0);
             previousTime = Time.time;
+        }
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.GameObject.name == "ground")
+        {
+            Debug.Log("CCollision Detected");
         }
     }
 }
