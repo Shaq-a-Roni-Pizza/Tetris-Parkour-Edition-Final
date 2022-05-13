@@ -493,7 +493,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07792fd75d22604f9af4303695422f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tetromino: {fileID: 7473565038442059276, guid: 52c525c62228a10459c53720cf606913, type: 3}
+  block1: {fileID: 7131819699971692800, guid: e23acf5c6e291394c88a690d2d6d318f, type: 3}
+  block2: {fileID: 7473565038442059276, guid: 52c525c62228a10459c53720cf606913, type: 3}
+  block3: {fileID: 2634393345761418400, guid: 2b42d12d8800a4d46a00ad10b7ba48b8, type: 3}
+  block4: {fileID: 260772091515859013, guid: 8e4d6520cf44210488a8c0904e3c7cb5, type: 3}
+  block5: {fileID: 439997220702805730, guid: c51a5450ad6e47645a8d4680f93a36ca, type: 3}
+  block6: {fileID: 8608194158884098540, guid: 93f7db0057680054eadde111f3138188, type: 3}
+  block7: {fileID: 7517983314883094046, guid: 4c36fbaa6828e974a8c33d09e10db467, type: 3}
   spawnRate: 7
 --- !u!4 &1355864913
 Transform:
