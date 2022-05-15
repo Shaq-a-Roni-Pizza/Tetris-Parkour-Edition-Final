@@ -5,7 +5,7 @@ using UnityEngine;
 public class Blocks : MonoBehaviour
 {
     private float previousTime;
-    public float fallTime = 0.8f;
+    public float fallTime = 0.2f;
     
 
     // Start is called before the first frame update
@@ -24,11 +24,5 @@ public class Blocks : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.GameObject.name == "ground")
-        {
-            Debug.Log("CCollision Detected");
-        }
-    }
+    
 }
