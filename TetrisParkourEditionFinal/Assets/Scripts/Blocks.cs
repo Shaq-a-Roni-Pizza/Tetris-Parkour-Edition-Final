@@ -6,7 +6,7 @@ public class Blocks : MonoBehaviour
 {
     private float previousTime;
     public float fallTime = 0.2f;
-    
+    public Vector3 rotationPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,14 @@ public class Blocks : MonoBehaviour
             transform.position += new Vector3(0, -1, 0);
             previousTime = Time.time;
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), 90);
+            
+        }
     }
 
+    
     
 }
