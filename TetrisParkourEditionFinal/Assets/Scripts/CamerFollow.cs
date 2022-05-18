@@ -1,14 +1,24 @@
 using UnityEngine;
 
+
 public class CamerFollow : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 offset;
+    [SerializeField]
+    private Transform targetFollow;
+    
 
-    private void FixedUpdate()
+    void Update ()
     {
-        transform.position = target.position+offset;
+        transform.position = new Vector3(
+            transform.position.x,
+            Mathf.Clamp(targetFollow.position.y, 0f, 10f),
+            transform.position.z);
+        
     }
+
+
+
+
 }
     
 
