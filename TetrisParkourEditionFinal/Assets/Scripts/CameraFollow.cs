@@ -1,13 +1,12 @@
 using UnityEngine;
 
 
-public class CamerFollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
     [SerializeField]
     private Transform targetFollow;
-    
 
-    void Update ()
+    void FixedUpdate ()
     {
         transform.position = new Vector3(
             transform.position.x,
