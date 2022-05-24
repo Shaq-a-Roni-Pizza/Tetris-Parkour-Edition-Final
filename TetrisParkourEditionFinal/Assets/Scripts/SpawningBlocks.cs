@@ -8,11 +8,12 @@ public class SpawningBlocks : MonoBehaviour
     public float spawnRate = 7f;
     float nextSpawn = 0f;
     int whatToSpawn;
+    private gameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     void Update()
@@ -47,5 +48,11 @@ public class SpawningBlocks : MonoBehaviour
             }
             nextSpawn = Time.time + spawnRate;
         }
+    }
+
+
+    public void difficulty()
+    {
+        
     }
 }
