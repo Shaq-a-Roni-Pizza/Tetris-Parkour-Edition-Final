@@ -6,6 +6,7 @@ namespace ClearSky
 {
     public class DemoCollegeStudentController : MonoBehaviour
     {
+        AudioSource jumpsound;
         public float movePower = 10f;
         public float KickBoardMovePower = 15f;
         public float jumpPower = 25f; //Set Gravity Scale in Rigidbody2D Component to 5
@@ -24,6 +25,7 @@ namespace ClearSky
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
+            jumpsound = GetComponent<AudioSource>();
         }
 
         private void Update()
@@ -117,6 +119,7 @@ namespace ClearSky
             {
                 isJumping = true;
                 anim.SetBool("isJump", true);
+                jumpsound.Play();
             }
             if (!isJumping)
             {
