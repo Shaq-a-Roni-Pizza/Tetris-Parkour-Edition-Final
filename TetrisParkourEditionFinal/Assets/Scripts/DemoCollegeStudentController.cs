@@ -33,11 +33,11 @@ namespace ClearSky
             Restart();
             if (alive)
             {
-                Hurt();
+                
                 Die();
-                Attack();
+               
                 Jump();
-                KickBoard();
+                
                 Run();
 
             }
@@ -45,20 +45,6 @@ namespace ClearSky
         private void OnTriggerEnter2D(Collider2D other)
         {
             anim.SetBool("isJump", false);
-        }
-        void KickBoard()
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha4) && isKickboard)
-            {
-                isKickboard = false;
-                anim.SetBool("isKickBoard", false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha4) && !isKickboard )
-            {
-                isKickboard = true;
-                anim.SetBool("isKickBoard", true);
-            }
-
         }
 
         void Run()
@@ -90,26 +76,6 @@ namespace ClearSky
 
                 }
                 transform.position += moveVelocity * movePower * Time.deltaTime;
-
-            }
-            if (isKickboard)
-            {
-                Vector3 moveVelocity = Vector3.zero;
-                if (Input.GetAxisRaw("Horizontal") < 0)
-                {
-                    direction = -1;
-                    moveVelocity = Vector3.left;
-
-                    transform.localScale = new Vector3(direction, 1, 1);
-                }
-                if (Input.GetAxisRaw("Horizontal") > 0)
-                {
-                    direction = 1;
-                    moveVelocity = Vector3.right;
-
-                    transform.localScale = new Vector3(direction, 1, 1);
-                }
-                transform.position += moveVelocity * KickBoardMovePower * Time.deltaTime;
             }
         }
         void Jump()
@@ -133,24 +99,8 @@ namespace ClearSky
 
             isJumping = false;
         }
-        void Attack()
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                anim.SetTrigger("attack");
-            }
-        }
-        void Hurt()
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                anim.SetTrigger("hurt");
-                if (direction == 1)
-                    rb.AddForce(new Vector2(-5f, 1f), ForceMode2D.Impulse);
-                else
-                    rb.AddForce(new Vector2(5f, 1f), ForceMode2D.Impulse);
-            }
-        }
+        
+
         void Die()
         {
             if (Input.GetKeyDown(KeyCode.Alpha3))
