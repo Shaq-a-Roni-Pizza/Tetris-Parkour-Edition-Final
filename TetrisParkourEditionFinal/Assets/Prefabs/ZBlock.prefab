@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad100679fce19d48972e7cf4f8e6fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallTime: 1
+  fallTime: 0.2
+  rotationPoint: {x: 0, y: 0, z: 0}
 --- !u!50 &5005235436776354057
 Rigidbody2D:
   serializedVersion: 4

@@ -313,7 +313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -262, y: -57}
+  m_AnchoredPosition: {x: 16, y: -75}
   m_SizeDelta: {x: 306.6989, y: 209.7963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101977447
@@ -803,14 +803,14 @@ RectTransform:
   m_GameObject: {fileID: 156176573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1514906262}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 68, y: -102}
+  m_AnchoredPosition: {x: 68, y: -152}
   m_SizeDelta: {x: 272.7617, y: 64.6699}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &156176575
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6002471, g: 0.22584549, b: 0.9811321, a: 1}
+  m_Color: {r: 0, g: 0.1580739, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1266,7 +1266,10 @@ MonoBehaviour:
 
     jump: space
 
-    press e to rotate'
+    press e to rotate
+
+    Get to the
+    top to win!!!'
 --- !u!222 &783058905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1896,7 +1899,7 @@ MonoBehaviour:
   block5: {fileID: 439997220702805730, guid: c51a5450ad6e47645a8d4680f93a36ca, type: 3}
   block6: {fileID: 8608194158884098540, guid: 93f7db0057680054eadde111f3138188, type: 3}
   block7: {fileID: 7517983314883094046, guid: 4c36fbaa6828e974a8c33d09e10db467, type: 3}
-  spawnRate: 3
+  spawnRate: 1
 --- !u!4 &1355864913
 Transform:
   m_ObjectHideFlags: 0
@@ -2335,7 +2338,7 @@ RectTransform:
   m_GameObject: {fileID: 2034358963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 931847071}
   m_Father: {fileID: 1514906262}
